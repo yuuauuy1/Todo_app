@@ -49,6 +49,7 @@ def delete(id):
     db.session.commit()
     return redirect('/')
 
+
 @app.route('/update/<int:id>', methods = ['GET', 'POST'])
 def update(id):
     post = Post.query.get(id)
